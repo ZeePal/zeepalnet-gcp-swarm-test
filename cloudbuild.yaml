@@ -14,6 +14,7 @@ steps:
       - GOOGLE_PROJECT=zeepalnet
       - GOOGLE_REGION=australia-southeast1
       - TF_VAR_host=swarm-1
+      - CLOUDSDK_COMPUTE_ZONE=us-west1-a
     entrypoint: bash
     args:
       - -c
@@ -25,6 +26,7 @@ steps:
       - GOOGLE_PROJECT=zeepalnet
       - GOOGLE_REGION=australia-southeast1
       - TF_VAR_host=swarm-1
+      - CLOUDSDK_COMPUTE_ZONE=us-west1-a
     args:
       - apply
       - '-parallelism=1000'
