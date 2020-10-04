@@ -4,7 +4,7 @@ steps:
     args:
       - -c
       - |
-          echo $HOME; mkdir ~/.ssh
+          echo $$HOME; mkdir ~/.ssh
     id: test
   - name: gcr.io/$PROJECT_ID/terraform-with-gcloud-ssh
     env:
