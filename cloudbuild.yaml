@@ -1,16 +1,16 @@
 steps:
-  - name: gcr.io/$PROJECT_ID/terraform-with-gcloud-ssh
-    env:
-      - GOOGLE_PROJECT=zeepalnet
-      - GOOGLE_REGION=australia-southeast1
-      - TF_VAR_host=swarm-1
-      - CLOUDSDK_COMPUTE_ZONE=us-west1-a
-    entrypoint: bash
-    args:
-      - -c
-      - |
-          ssh swarm-1 -- hostname
-    id: test
+  # - name: gcr.io/$PROJECT_ID/terraform-with-gcloud-ssh
+  #   env:
+  #     - GOOGLE_PROJECT=zeepalnet
+  #     - GOOGLE_REGION=australia-southeast1
+  #     - TF_VAR_host=swarm-1
+  #     - CLOUDSDK_COMPUTE_ZONE=us-west1-a
+  #   entrypoint: bash
+  #   args:
+  #     - -c
+  #     - |
+  #         ssh swarm-1 -- hostname
+  #   id: test
   - name: gcr.io/$PROJECT_ID/terraform-with-gcloud-ssh
     env:
       - GOOGLE_PROJECT=zeepalnet
