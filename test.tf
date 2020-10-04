@@ -9,7 +9,8 @@ resource docker_service test {
 
   endpoint_spec {
     ports {
-      target_port = "80"
+      target_port    = "80"
+      published_port = "80"
     }
   }
 }
